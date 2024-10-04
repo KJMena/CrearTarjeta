@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(187, 42, 42);
+    text-align: center;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#vtarjeta,
+#ptarjeta {
+    width: 50%;
+}
+
+#ptarjeta {
+    padding: 20px;
+    background-color: #e0b1cb;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#tarjeta {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#tarjeta h1 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #4b0c26;
+}
+
+#tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#tematica,
+#colores,
+#imagen,
+#datosT {
+    margin-bottom: 20px;
+}
+
+#tematica select,
+#colorf,
+.colorT,
+textarea,
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4b0c26;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+#imagen img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #4b0c26;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#imagen img:hover {
+    transform: scale(1.1);
+    border-color: #9b5a83;
+}
+
+#mostrar {
+    background-color: #9b5a83;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#mostrar:hover {
+    background-color: #4b0c26;
+}
+
+#colores input[type="color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    height: 100px;
+    border-radius: 8px;
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    #vtarjeta,
+    #ptarjeta {
+        width: 90%;
+    }
+    #tarjeta {
+        margin-bottom: 20px;
+    }
+}
